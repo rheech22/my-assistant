@@ -1,0 +1,14 @@
+[project]
+name = "my-assistant"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "duckduckgo-search>=7.1.1",
+    "ipykernel>=6.29.5",
+    "langchain>=0.3.13",
+    "langchain-community>=0.3.13",
+    "openai>=1.58.1",
+    "wikipedia>=1.4.0",
+]
