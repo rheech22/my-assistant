@@ -31,18 +31,21 @@ class Assistant:
         thread = self.client.beta.threads.create()
         self.thread_id = thread.id
 
-    def query(self, content):
+    def query(self, content, chat_callback):
+        event_handler = self.event_handler_factory(
+            client=self.client, chat_callback=chat_callback
+        )
         with self.client.beta.threads.runs.stream(
             thread_id=self.thread_id,
             assistant_id=self.assistant_id,
-            event_handler=self.event_handler_factory(client=self.client),
+            event_handler=event_handler,
             additional_messages=[{"role": "user", "content": content}],
         ) as stream:
             stream.until_done()
-        return self.thread_id
+        return event_handler.answer
 
     def get_messages(self, thread_id):
-        messages = self.client.beta.threads.messages.list(thread_id=thread_id)
+        messages = client.beta.threads.messages.list(thread_id=thread_id)
         messages = list(messages)
         messages.reverse()
         result = []
