@@ -1,49 +1,31 @@
-# Path of Exile Game Overview
+# House of Cards TV Show Overview
 
 ## General Information
-Path of Exile is a free-to-play action role-playing video game developed and published by Grinding Gear Games. It was officially released on October 23, 2013, after a successful open beta phase. The game is available on multiple platforms including Microsoft Windows, macOS, Xbox One, PlayStation 4, and PlayStation 5. A sequel, Path of Exile 2, is set to release in early access on December 6, 2024.
+**House of Cards** is an American political thriller television series created by Beau Willimon. It is based on the 1989 novel of the same title by Michael Dobbs and is an adaptation of the 1990 British series of the same name. The first season, consisting of 13 episodes, was released on February 1, 2013, on Netflix, making it the first TV series produced by a studio for the streaming service.
 
-## Setting and Story
-The game is set in the dark fantasy world of Wraeclast, a continent filled with ancient gods and dark lore. Players take on the role of exiles who have been cast out from the island nation of Oriath. The primary objective is to fight through the dangers of Wraeclast and ultimately return to Oriath, battling various evils along the way.
+## Plot Summary
+Set in Washington, D.C., the series follows Frank Underwood (played by Kevin Spacey), an amoral politician and Democrat from South Carolina's 5th congressional district, and his equally ambitious wife, Claire Underwood (played by Robin Wright). After being passed over for the position of Secretary of State, Frank initiates an elaborate plan to attain power, aided by Claire. The series explores themes of manipulation, betrayal, and the ruthless pursuit of power.
 
-## Gameplay Mechanics
-### Character Classes
-Players can choose from seven character classes:
-- **Marauder**
-- **Duelist**
-- **Ranger**
-- **Shadow**
-- **Witch**
-- **Templar**
-- **Scion**
+## Main Characters
+- **Frank Underwood** (Kevin Spacey): The protagonist, a cunning politician who rises through the ranks of power.
+- **Claire Underwood** (Robin Wright): Frank's ambitious wife who plays a significant role in his schemes.
+- **Doug Stamper** (Michael Kelly): Frank's loyal chief of staff.
+- **Zoe Barnes** (Kate Mara): A reporter who becomes romantically involved with Frank.
+- **Peter Russo** (Corey Stoll): A congressman with a troubled past who becomes a pawn in Frank's plans.
 
-### Skill Gem System
-Skills in Path of Exile are represented as items known as skill gems. These gems grant abilities when socketed into equipment, and players can modify their skills using support gems. This system allows for deep customization of character abilities.
+## Production and Release
+The series was produced by Beau Willimon, David Fincher, and others, and was filmed primarily in Baltimore, Maryland. It consists of six seasons with a total of 73 episodes, concluding on November 2, 2018. The show received critical acclaim and numerous awards, including 33 Primetime Emmy Award nominations.
 
-### Passive Skill Tree
-The game features a vast passive skill tree that all character classes share. Players can navigate this tree to enhance their characters' abilities and create unique builds.
+## Reception
+House of Cards was praised for its writing, direction, and performances, particularly those of Spacey and Wright. It was the first original online-only streaming television series to receive major Emmy nominations. However, following allegations of sexual misconduct against Spacey in 2017, Netflix terminated its relationship with him, and the sixth season was produced without his involvement.
 
-### Item Economy
-Path of Exile has a strong online item economy, where items can have random properties. The game does not use traditional currency; instead, it employs various orbs that can modify items.
-
-### Leagues and Events
-The game frequently hosts leagues that introduce new mechanics and challenges, allowing players to compete in a fresh environment with unique rules.
-
-## Expansions
-Since its release, Path of Exile has seen numerous expansions that have added new content, mechanics, and story elements. Some notable expansions include:
-- **The Fall of Oriath** (2017)
-- **Synthesis** (2019)
-- **Heist** (2020)
-- **Crucible** (2023)
-
-## Community and Support
-Path of Exile has a dedicated community and offers various resources for players, including forums, wikis, and guides. The game is designed to be competitive, with features like PvP and ladder races.
+## Accolades
+- **Emmy Awards**: 33 nominations, including Outstanding Drama Series.
+- **Golden Globe Awards**: 8 nominations, with Robin Wright winning for Best Actress in 2014 and Spacey winning for Best Actor in 2015.
 
 ## Conclusion
-Path of Exile is known for its depth, complexity, and commitment to a non-pay-to-win model, making it a favorite among action RPG enthusiasts.
+House of Cards is recognized for its dark portrayal of political ambition and the complexities of power dynamics in Washington, D.C. Despite its controversial ending, it remains a significant work in the landscape of modern television.
 
 ## Sources
-- [Path of Exile - Wikipedia](https://en.wikipedia.org/wiki/Path_of_Exile)
-- [Path of Exile Official Site](https://www.pathofexile.com/game)
-- [Path of Exile Wiki](https://www.poewiki.net/wiki/Path_of_Exile)
-- [Intro to Path of Exile Game Guide](https://www.exitlag.com/blog/intro-to-path-of-exile-game-guide/)
+- [House of Cards - Wikipedia](https://en.wikipedia.org/wiki/House_of_Cards_(American_TV_series))
+- [House of Cards Episode Guide](https://epguides.com/HouseofCards_2013/)

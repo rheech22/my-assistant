@@ -28,23 +28,18 @@ class Assistant:
         self.client = OpenAI()
         self.assistant_id = assistant_id
         self.event_handler_factory = event_handler_factory
+        thread = self.client.beta.threads.create()
+        self.thread_id = thread.id
 
     def query(self, content):
-        thread = self.client.beta.threads.create(
-            messages=[
-                {
-                    "role": "user",
-                    "content": content,
-                }
-            ]
-        )
         with self.client.beta.threads.runs.stream(
-            thread_id=thread.id,
+            thread_id=self.thread_id,
             assistant_id=self.assistant_id,
             event_handler=self.event_handler_factory(client=self.client),
+            additional_messages=[{"role": "user", "content": content}],
         ) as stream:
             stream.until_done()
-        return thread.id
+        return self.thread_id
 
     def get_messages(self, thread_id):
         messages = self.client.beta.threads.messages.list(thread_id=thread_id)
@@ -53,7 +48,7 @@ class Assistant:
         result = []
         for message in messages:
             result.append(f"{message.role}: {message.content[0].text.value}")
-        return "\n".join(result)
+        return result
 
 
 # example usage
