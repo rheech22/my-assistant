@@ -1,0 +1,47 @@
+# Path of Exile Game Overview
+
+## Introduction
+Path of Exile is a free-to-play action role-playing video game developed and published by Grinding Gear Games. After an open beta test phase, it was officially released on October 23, 2013, for Microsoft Windows. The game later expanded to Xbox One in August 2017 and PlayStation 4 in March 2019. Set in a dark fantasy world, Path of Exile offers players a rich gaming experience with its deep lore and complex systems.
+
+## Setting
+The game unfolds in the dark, brutal continent of Wraeclast, a land filled with ancient ruins and many deities. The story revolves around the exiles who have been banished from the island nation of Oriath; players control these exiles as they venture to uncover the secrets of Wraeclast and fight formidable foes, including ancient gods [1](https://en.wikipedia.org/wiki/Path_of_Exile).
+
+## Gameplay Mechanics
+### Character Classes
+Upon starting, players can choose from seven different character classes:
+- **Marauder**
+- **Duelist**
+- **Ranger**
+- **Shadow**
+- **Witch**
+- **Templar**
+- **Scion**
+
+Each class has its unique strengths and skill sets, influencing the player's style of gameplay.
+
+### Skill System
+Path of Exile uses a unique skill gem system where skills are represented as gems that players can socket into their equipment. This allows for a high degree of customization since players can combine different active and support skills to modify their abilities. Skills level up independently, and support gems can change how skills operate, creating varied and dynamic gameplay [2](https://www.pathofexile.com/game).
+
+### Passive Skill Tree
+Characters can also develop their abilities through a massive passive skill tree that extends across virtually all character classes, allowing players to create unique builds. This tree can be manipulated using craftable jewels and offers a myriad of play styles [3](https://www.pathofexile.com/game).
+
+## Economic and Social Features
+Path of Exile incorporates a robust item economy with no traditional currency; instead, players trade items using various orbs that can modify item properties. The game is heavily focused on player interaction through PvP (Player vs. Player) modes and races, where players can compete in limited-duration leagues [4](https://www.exitlag.com/blog/intro-to-path-of-exile-game-guide/).
+
+## Expansions and Updates
+Since its initial release, Path of Exile has seen numerous expansions that introduce new content, gameplay mechanics, and systems. Some recent expansions include:
+- **Settlement of Kalguur** (2024-07-26)
+- **Necropolis** (2024-03-29)
+- **Affliction** (2023-12-08)
+
+A sequel titled **Path of Exile 2** is also in development and is set to extend the original lore and gameplay elements [5](https://www.poewiki.net/wiki/Path_of_Exile).
+
+## Conclusion
+Path of Exile is renowned for its deep customization, complex game systems, and a strong online community. Its dark aesthetic and gripping narrative, combined with free-to-play access, have solidified its place as one of the leading action RPGs available today. 
+
+## References
+[1] https://en.wikipedia.org/wiki/Path_of_Exile  
+[2] https://www.pathofexile.com/game  
+[3] https://www.exitlag.com/blog/intro-to-path-of-exile-game-guide/  
+[4] https://www.exitlag.com/blog/intro-to-path-of-exile-game-guide/  
+[5] https://www.poewiki.net/wiki/Path_of_Exile

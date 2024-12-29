@@ -84,7 +84,7 @@ class ProgressBar:
 
     def clear(self):
         self._bar.progress(100, "Done !")
-        time.sleep(1)
+        time.sleep(0.3)
         self._bar.empty()
 
 
@@ -101,8 +101,8 @@ if api_key:
     if is_file_exists():
         delete_output_file()
     paint_history()
-    message = st.chat_input("Ask anything what you want to know")
     progress = ProgressBar()
+    message = st.chat_input("Ask anything what you want to know")
     assistant = Assistant(
         event_handler_factory=event_handler_factory,
         api_key=api_key,
@@ -113,6 +113,7 @@ if api_key:
         send_message(message, "human")
         progress.start("Thinking to answer...")
         assistant.query(message)
+        progress.clear()
         if is_file_exists():
             st.download_button(
                 label="Download this response as a file",
@@ -120,9 +121,9 @@ if api_key:
                 file_name="response.txt",
                 mime="text/plain",
             )
-        progress.clear()
         with st.sidebar:
             st.write(st.session_state["messages"])
+
 else:
     st.markdown(
         """
