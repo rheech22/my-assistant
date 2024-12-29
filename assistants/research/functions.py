@@ -106,8 +106,20 @@ def save_to_file(inputs):
 
 
 functions_map = {
-    "search_by_duckduckgo": search_by_duckduckgo,
-    "search_by_wikipedia": search_by_wikipedia,
-    "scrape_web_page": scrape_web_page,
-    "save_to_file": save_to_file,
+    "search_by_duckduckgo": {
+        "function": search_by_duckduckgo,
+        "description": "Searching by DuckDuckGo",
+    },
+    "search_by_wikipedia": {
+        "function": search_by_wikipedia,
+        "description": "Searching by Wikipedia",
+    },
+    "scrape_web_page": {
+        "function": scrape_web_page,
+        "description": "Scraping web page",
+    },
+    "save_to_file": {
+        "function": save_to_file,
+        "description": "Saving to file",
+    },
 }

@@ -25,7 +25,9 @@ instructions = """
 
 
 class Assistant:
-    def __init__(self, event_handler_factory, api_key):
+    def __init__(
+        self, event_handler_factory, api_key, chat_callback, progress_callback
+    ):
         self.client = OpenAI(api_key=api_key)
         assistant = self.client.beta.assistants.create(
             name="Research Expert",
@@ -37,10 +39,14 @@ class Assistant:
         self.event_handler_factory = event_handler_factory
         thread = self.client.beta.threads.create()
         self.thread_id = thread.id
+        self.chat_callback = chat_callback
+        self.progress_callback = progress_callback
 
-    def query(self, content, chat_callback):
+    def query(self, content):
         event_handler = self.event_handler_factory(
-            client=self.client, chat_callback=chat_callback
+            client=self.client,
+            chat_callback=self.chat_callback,
+            progress_callback=self.progress_callback,
         )
         with self.client.beta.threads.runs.stream(
             thread_id=self.thread_id,
@@ -51,17 +57,7 @@ class Assistant:
             stream.until_done()
         return event_handler.answer
 
-    def get_messages(self, thread_id):
-        messages = self.client.beta.threads.messages.list(thread_id=thread_id)
-        messages = list(messages)
-        messages.reverse()
-        result = []
-        for message in messages:
-            result.append(f"{message.role}: {message.content[0].text.value}")
-        return result
-
 
 # example usage
-# assistant = Assistant(assistant_id, event_handler_factory)
-# thread_id = assistant.query("I want to know about the path of exile game.")
-# assistant.get_messages(thread_id)
+# assistant = Assistant(assistant_id, event_handler_factory, chat_callback, progress_callback)
+# assistant.query("I want to know about the path of exile game.")

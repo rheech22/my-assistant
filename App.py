@@ -1,13 +1,18 @@
 import streamlit as st
+import time
 import os
+
 from assistants.research.assistant import Assistant
 from assistants.research.event_handler import event_handler_factory
+from assistants.research.functions import functions_map
+
+# session state
+if "messages" not in st.session_state:
+    st.session_state["messages"] = []
 
 
 # chat
 def paint_history():
-    if "messages" not in st.session_state:
-        st.session_state["messages"] = []
     for message in st.session_state["messages"]:
         send_message(
             message["message"],
@@ -17,8 +22,6 @@ def paint_history():
 
 
 def save_message(message, role):
-    if "messages" not in st.session_state:
-        st.session_state["messages"] = []
     st.session_state["messages"].append({"message": message, "role": role})
 
 
@@ -53,7 +56,7 @@ def read_output_file():
 
 # view
 st.set_page_config(
-    page_title="My Assistant",
+    page_title="My Research Assistant",
     page_icon="🔆",
     layout="centered",
     initial_sidebar_state="expanded",
@@ -64,8 +67,29 @@ st.set_page_config(
     },
 )
 
+
+class ProgressBar:
+    def __init__(self):
+        self._progress = int(0)
+
+    def start(self, text):
+        self._bar = st.progress(0, text=text)
+        return self._bar
+
+    def progress(self, status):
+        self._progress += 10
+        if self._progress > 100:
+            self._progress = 100
+        self._bar.progress(self._progress, text=status)
+
+    def clear(self):
+        self._bar.progress(100, "Done !")
+        time.sleep(1)
+        self._bar.empty()
+
+
 with st.sidebar:
-    st.title("My Assistant")
+    st.title("My Research Assistant")
     api_key = st.text_input(
         "Write down your OpenAI's API Key",
         placeholder="sh-1234123412341234",
@@ -77,18 +101,26 @@ if api_key:
     if is_file_exists():
         delete_output_file()
     paint_history()
-    message = st.chat_input("Ask anything about your file...")
-    assistant = Assistant(event_handler_factory=event_handler_factory, api_key=api_key)
+    message = st.chat_input("Ask anything what you want to know")
+    progress = ProgressBar()
+    assistant = Assistant(
+        event_handler_factory=event_handler_factory,
+        api_key=api_key,
+        chat_callback=chat_callback,
+        progress_callback=progress.progress,
+    )
     if message:
         send_message(message, "human")
-        assistant.query(message, chat_callback=chat_callback)
+        progress.start("Thinking to answer...")
+        assistant.query(message)
         if is_file_exists():
             st.download_button(
-                label="Download output.txt",
+                label="Download this response as a file",
                 data=read_output_file(),
-                file_name="output.txt",
+                file_name="response.txt",
                 mime="text/plain",
             )
+        progress.clear()
         with st.sidebar:
             st.write(st.session_state["messages"])
 else:
@@ -96,11 +128,10 @@ else:
         """
     ## Welcome!
                 
-    ### Use this agent to ask to research about What you want to know.
+    ### I Can help you to research information.
 
-    - this agent will help you to find the information you need.
+    - I will help you to find the information you need.
     - OPENAI API KEY is required to use this agent.
-    - Just type in the message box and press Enter.
     """
     )
     st.session_state["messages"] = []
