@@ -1,30 +1,49 @@
-# History of House Music
+# Path of Exile Game Overview
 
-House music is a genre of electronic dance music that originated in the early 1980s in Chicago, Illinois. It is characterized by a repetitive four-on-the-floor beat and a tempo typically ranging from 115 to 130 beats per minute. The genre emerged from the underground club culture of Chicago, particularly among Black and LGBTQ+ communities, and was heavily influenced by disco, funk, and soul music.
+## General Information
+Path of Exile is a free-to-play action role-playing video game developed and published by Grinding Gear Games. It was officially released on October 23, 2013, after a successful open beta phase. The game is available on multiple platforms including Microsoft Windows, macOS, Xbox One, PlayStation 4, and PlayStation 5. A sequel, Path of Exile 2, is set to release in early access on December 6, 2024.
 
-## Origins
-The roots of house music can be traced back to the late 1970s, during a time when disco was at its peak. Clubs like the Warehouse and the Power Plant in Chicago became hotspots for DJs and music producers who sought to create a new sound that reflected the urban experience. Frankie Knuckles, often referred to as the "Godfather of House Music," was a key figure in this scene, spinning records at the Warehouse and experimenting with mixing techniques and drum machines.
+## Setting and Story
+The game is set in the dark fantasy world of Wraeclast, a continent filled with ancient gods and dark lore. Players take on the role of exiles who have been cast out from the island nation of Oriath. The primary objective is to fight through the dangers of Wraeclast and ultimately return to Oriath, battling various evils along the way.
 
-The term "house music" is believed to have originated from the Warehouse, where Knuckles and other DJs would play a mix of disco and electronic music. As disco began to decline in popularity due to over-commercialization and events like the Disco Demolition Night in 1979, DJs turned to creating their own tracks, leading to the birth of house music.
+## Gameplay Mechanics
+### Character Classes
+Players can choose from seven character classes:
+- **Marauder**
+- **Duelist**
+- **Ranger**
+- **Shadow**
+- **Witch**
+- **Templar**
+- **Scion**
 
-## Key Developments in the 1980s
-In 1984, Jesse Saunders released "On and On," which is often cited as one of the first house tracks. This marked a significant moment in the genre's history, as it inspired many young producers to experiment with house music. Other notable tracks from this era include Marshall Jefferson's "Move Your Body" and Lil Louis's "French Kiss."
+### Skill Gem System
+Skills in Path of Exile are represented as items known as skill gems. These gems grant abilities when socketed into equipment, and players can modify their skills using support gems. This system allows for deep customization of character abilities.
 
-As house music gained traction in Chicago, it began to spread to other cities, including New York and Detroit. By the late 1980s, house music had become a global phenomenon, influencing pop music and leading to the emergence of various subgenres, including acid house and deep house.
+### Passive Skill Tree
+The game features a vast passive skill tree that all character classes share. Players can navigate this tree to enhance their characters' abilities and create unique builds.
 
-## The 1990s and Beyond
-The 1990s saw house music continue to evolve, with the rise of new artists and the establishment of record labels dedicated to the genre. The Chosen Few DJs, a collective formed in Chicago, played a significant role in promoting house music through events like the annual Chosen Few Picnic, which celebrates the genre's legacy.
+### Item Economy
+Path of Exile has a strong online item economy, where items can have random properties. The game does not use traditional currency; instead, it employs various orbs that can modify items.
 
-In the 2000s, house music experienced a resurgence in popularity, particularly with the rise of electronic dance music (EDM). Artists like David Guetta and Calvin Harris brought house music back into the mainstream, blending it with pop elements and reaching new audiences.
+### Leagues and Events
+The game frequently hosts leagues that introduce new mechanics and challenges, allowing players to compete in a fresh environment with unique rules.
 
-## Cultural Impact
-House music has had a profound impact on popular culture, influencing various genres and artists worldwide. It has been incorporated into the works of major international artists such as Whitney Houston, Madonna, and Lady Gaga. The genre's roots in the Black and LGBTQ+ communities have also sparked discussions about representation and recognition within the music industry.
+## Expansions
+Since its release, Path of Exile has seen numerous expansions that have added new content, mechanics, and story elements. Some notable expansions include:
+- **The Fall of Oriath** (2017)
+- **Synthesis** (2019)
+- **Heist** (2020)
+- **Crucible** (2023)
+
+## Community and Support
+Path of Exile has a dedicated community and offers various resources for players, including forums, wikis, and guides. The game is designed to be competitive, with features like PvP and ladder races.
 
 ## Conclusion
-Today, house music remains a vital part of the global music landscape, with a rich history that reflects its origins in Chicago's underground scene. The genre continues to evolve, with new artists and subgenres emerging, ensuring that house music will remain a significant force in electronic dance music for years to come.
+Path of Exile is known for its depth, complexity, and commitment to a non-pay-to-win model, making it a favorite among action RPG enthusiasts.
 
 ## Sources
-1. [House music - Wikipedia](https://en.wikipedia.org/wiki/House_music)
-2. [A Timeline Of House Music: Key Moments, Artists & Tracks That Shaped The Foundational Dance Music Genre](https://www.grammy.com/news/house-music-timeline-important-artists-songs-moments)
-3. [Chicago Legends Debate the Origins of House Music](https://southsideweekly.com/chicago-legends-debate-the-origins-of-house-music/)
-4. [Where did house music come from? - California Learning Resource Network](https://www.clrn.org/where-did-house-music-come-from/)
+- [Path of Exile - Wikipedia](https://en.wikipedia.org/wiki/Path_of_Exile)
+- [Path of Exile Official Site](https://www.pathofexile.com/game)
+- [Path of Exile Wiki](https://www.poewiki.net/wiki/Path_of_Exile)
+- [Intro to Path of Exile Game Guide](https://www.exitlag.com/blog/intro-to-path-of-exile-game-guide/)

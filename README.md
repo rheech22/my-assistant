@@ -20,8 +20,23 @@ source venv/bin/activate
 uv pip install -r pyproject.toml
 ```
 
+## Run Streamlit Dev Server
+
+```bash
+streamlit run App.py
+```
+
 ## Quit Virtual Environment
 
 ```bash
 deactive
+```
+
+## Environment Variables
+
+```bash
+# .env and .streamlit/secrets.toml
+USER_AGENT=myagent
+OPENAI_API_KEY=sk-1234123412341234
+OPENAI_ASSISTANT_ID=asst_adsfasdfasdfasdf
 ```

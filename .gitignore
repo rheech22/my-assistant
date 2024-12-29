@@ -11,3 +11,4 @@ wheels/
 
 # Environment Variables
 .env
+.streamlit
