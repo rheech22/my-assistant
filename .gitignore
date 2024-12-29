@@ -11,4 +11,4 @@ wheels/
 
 # Environment Variables
 .env
-.streamlit
+.streamlit/secrets.toml
