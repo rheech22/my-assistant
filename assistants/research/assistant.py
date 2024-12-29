@@ -1,5 +1,6 @@
-import os
+# import os
 from openai import OpenAI
+from assistants.research.functions import assistant_functions
 
 instructions = """
     You are a research expert.
@@ -20,13 +21,19 @@ instructions = """
 # )
 
 # set the assistant's id as an environment variable
-assistant_id = os.environ.get("OPENAI_ASSISTANT_ID")
+# assistant_id = os.environ.get("OPENAI_ASSISTANT_ID")
 
 
 class Assistant:
-    def __init__(self, assistant_id, event_handler_factory):
-        self.client = OpenAI()
-        self.assistant_id = assistant_id
+    def __init__(self, event_handler_factory, api_key):
+        self.client = OpenAI(api_key=api_key)
+        assistant = self.client.beta.assistants.create(
+            name="Research Expert",
+            instructions=instructions,
+            model="gpt-4o-mini",
+            tools=assistant_functions,
+        )
+        self.assistant_id = assistant.id
         self.event_handler_factory = event_handler_factory
         thread = self.client.beta.threads.create()
         self.thread_id = thread.id
@@ -45,7 +52,7 @@ class Assistant:
         return event_handler.answer
 
     def get_messages(self, thread_id):
-        messages = client.beta.threads.messages.list(thread_id=thread_id)
+        messages = self.client.beta.threads.messages.list(thread_id=thread_id)
         messages = list(messages)
         messages.reverse()
         result = []

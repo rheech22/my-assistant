@@ -12,25 +12,15 @@ class EventHandler(AssistantEventHandler):
         self.chat_callback = chat_callback
 
     @override
-    def on_text_created(self, text) -> None:
-        print("\nassistant > ", end="", flush=True)
-
-    @override
-    def on_text_delta(self, delta, snapshot):
-        self.answer += delta.value
-        print(delta.value, end="", flush=True)
-
-    @override
-    def on_text_done(self, text) -> None:
-        print(f"on_text_done > chat_callback: {self.answer}")
-        if self.chat_callback:
-            print(f"on_text_done > calling chat_callback")
-            self.chat_callback(self.answer)
+    def on_message_done(self, message) -> None:
+        print(f"on_message_done > message: {message}")
+        self.chat_callback(message.content[0].text.value)
+        self.answer = message.content[0].text.value
 
     @override
     def on_end(self):
         run = self.current_run
-        print(f"on_tool_call_done > run status: {run.status}")
+        print(f"ON_END > run status: {run.status}")
         if run.status != "requires_action":
             return
         required_actions = run.required_action.submit_tool_outputs.tool_calls
@@ -39,7 +29,7 @@ class EventHandler(AssistantEventHandler):
             action_id = action.id
             function = action.function
             print(
-                f"on_end > calling required action: {function.name} with arg {function.arguments}"
+                f"ON_END > calling required action: {function.name} with arg {function.arguments}"
             )
             outputs.append(
                 {

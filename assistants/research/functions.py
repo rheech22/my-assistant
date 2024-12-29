@@ -4,7 +4,7 @@ from langchain.document_loaders import WebBaseLoader
 from pathlib import Path
 
 
-functions = [
+assistant_functions = [
     {
         "type": "function",
         "function": {
