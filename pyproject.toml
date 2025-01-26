@@ -6,7 +6,9 @@ readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
     "duckduckgo-search>=7.1.1",
+    "faiss-cpu>=1.9.0.post1",
     "ipykernel>=6.29.5",
+    "langchain-openai>=0.3.2",
     "langchain>=0.3.13",
     "langchain-community>=0.3.13",
     "openai>=1.58.1",
